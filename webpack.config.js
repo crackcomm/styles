@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require('webpack')
 const cssnano = require('cssnano')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
@@ -7,22 +8,14 @@ const postcssImport = require('postcss-import')
 
 module.exports = {
   entry: {
-    app: './index.ts',
+    app: path.join(__dirname, 'index.ts'),
   },
   output: {
-    path: './dist',
+    path: path.join(__dirname, 'dist'),
     filename: 'build.js',
     publicPath: '/',
-    library: 'graphcool-styles',
+    library: 'styles-tachyons',
     libraryTarget: 'umd',
-  },
-  externals: {
-    react: {
-      commonjs: 'react',
-			commonjs2: 'react',
-			amd: 'React',
-			root: 'React',
-    },
   },
   module: {
     rules: [{
@@ -43,9 +36,6 @@ module.exports = {
     }, {
       test: /\.ts(x?)$/,
       loader: 'awesome-typescript-loader',
-    }, {
-      test: /icons\/.*\.svg$/,
-      loader: 'raw-loader!svgo-loader',
     }],
   },
   plugins: [
@@ -56,7 +46,7 @@ module.exports = {
           postcssImport(),
           postcssInherit,
           postcssSimpleVars({
-            variables: () => require('./dist/variables/variables'),
+            variables: () => require('./dist/theme/variables'),
           }),
           cssnano({
             autoprefixer: {
@@ -70,11 +60,6 @@ module.exports = {
             safe: true,
           })
         ],
-        svgo: {
-          plugins: [
-            {removeStyleElement: true},
-          ],
-        },
       }
     }),
   ],

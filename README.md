@@ -1,16 +1,20 @@
-# styles [![npm version](https://badge.fury.io/js/graphcool-styles.svg)](https://badge.fury.io/js/graphcool-styles) [![CircleCI](https://circleci.com/gh/graphcool/styles.svg?style=svg)](https://circleci.com/gh/graphcool/styles)
-Shared style resources between Graphcool projects
+# styles-tachyons
 
-## Development
+[![npm version](https://badge.fury.io/js/styles-tachyons.svg)](https://badge.fury.io/js/styles-tachyons)
 
-```sh
-npm install
-npm link
+Tachyons styles
+
+## Build
+
+```console
+$ export NODE_ENV=production
+$ npm build
 ```
 
-### WIP app repository
+## Thanks
 
-```sh
-npm link graphcool-styles
-```
+Originally based on [styles](https://github.com/graphcool/styles).
 
+## License
+
+The [MIT license](https://opensource.org/licenses/MIT) based on [tachyons](http://tachyons.io/) and [normalize.css](https://necolas.github.io/normalize.css/) original license.

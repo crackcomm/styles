@@ -8,7 +8,7 @@ export const darkerBlue: string = 'rgba(15,32,46,1)'
 export const darkestBlue: string = 'rgb(11,20,28)'
 export const orange: string = 'rgba(207,92,54,1)'
 export const red: string = 'rgba(242,92,84,1)'
-export const accent: string = '#00b861' // = green !
+export const accent: string = 'rgb(0,184,97)'
 export const lightGreen: string = 'rgba(42,189,60,1)'
 export const lightBlue: string = 'rgba(74,183,255,1)'
 export const pink: string = 'rgb(224,0,130)'

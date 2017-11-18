@@ -1,3 +1,5 @@
+/*! TACHYONS | http://tachyons.io */
+
 /*
   Often used in combination with background image set as an inline style
   on an html element.
@@ -912,7 +914,7 @@
      l = left
 */
 
-/*Padding all*/
+/* Padding all */
 .pa0 { padding: 0; }
 .pa4 { padding: $size04; }
 .pa6 { padding: $size06; }
@@ -925,7 +927,7 @@
 .pa60 { padding: $size60; }
 .pa96 { padding: $size96; }
 
-/*Padding horizonal*/
+/* Padding horizonal */
 .ph0 { padding-left: 0; padding-right: 0; }
 .ph4 { padding-left: $size04; padding-right: $size04; }
 .ph6 { padding-left: $size06; padding-right: $size06; }
@@ -938,7 +940,7 @@
 .ph60 { padding-left: $size60; padding-right: $size60; }
 .ph96 { padding-left: $size96; padding-right: $size96; }
 
-/*Padding vertical*/
+/* Padding vertical */
 .pv0 { padding-top: 0; padding-bottom: 0; }
 .pv4 { padding-top: $size04; padding-bottom: $size04; }
 .pv6 { padding-top: $size06; padding-bottom: $size06; }
@@ -953,7 +955,7 @@
 .pv60 { padding-top: $size60; padding-bottom: $size60; }
 .pv96 { padding-top: $size96; padding-bottom: $size96; }
 
-/*Padding left*/
+/* Padding left */
 .pl0 { padding-left: 0; }
 .pl4 { padding-left: $size04; }
 .pl6 { padding-left: $size06; }
@@ -965,7 +967,7 @@
 .pl60 { padding-left: $size60; }
 .pl96 { padding-left: $size96; }
 
-/*Padding right*/
+/* Padding right */
 .pr0 { padding-right: 0; }
 .pr4 { padding-right: $size04; }
 .pr6 { padding-right: $size06; }
@@ -978,7 +980,7 @@
 .pr60 { padding-right: $size60; }
 .pr96 { padding-right: $size96; }
 
-/*Padding top*/
+/* Padding top */
 .pt0 { padding-top: 0; }
 .pt4 { padding-top: $size04; }
 .pt6 { padding-top: $size06; }
@@ -991,7 +993,7 @@
 .pt60 { padding-top: $size60; }
 .pt96 { padding-top: $size96; }
 
-/*Padding bottom*/
+/* Padding bottom */
 .pb0 { padding-bottom: 0; }
 .pb4 { padding-bottom: $size04; }
 .pb6 { padding-bottom: $size06; }

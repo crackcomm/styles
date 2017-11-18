@@ -1,16 +1,20 @@
-import Icon from './components/Icon/Icon'
-import * as variables from './variables/variables'
-const groups: any = require('./css/groups.css')
+/**
+ * Tachyons Styles module.
+ */
+import * as variables from './theme/variables'
+
+declare var require
+
+/**
+ * CSS Imports.
+ */
+const normalize: any = require('./css/normalize.css')
 const particles: any = require('./css/particles.css')
-const base: any = require('./css/base.css')
 
 export {
-  Icon,
+  normalize,
   variables,
   variables as $v,
-  groups,
-  groups as $g,
   particles,
   particles as $p,
-  base,
 }

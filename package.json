@@ -1,6 +1,6 @@
 {
   "name": "styles-tachyons",
-  "version": "0.0.3",
+  "version": "0.0.2",
   "description": "Tachyons styles",
   "main": "dist/build.js",
   "files": [
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "tslint {components,theme}/**/*.ts{,x}",
     "bump": "npm version patch --no-git-tag-version && git add package.json",
-    "prepublish": "npm run build && npm run bump",
+    "release": "npm run build && npm run bump && npm publish",
     "prebuild": "rimraf dist",
     "build-particles": "postcss css/particles.css -o dist/particles.css",
     "build": "tcm css -c -o dist && tsc -d && webpack --config webpack.config.js && npm run build-particles"

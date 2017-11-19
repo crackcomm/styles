@@ -1,6 +1,6 @@
 {
   "name": "styles-tachyons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tachyons styles",
   "main": "dist/build.js",
   "files": [

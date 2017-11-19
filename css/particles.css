@@ -1,21 +1,41 @@
-/*! TACHYONS | http://tachyons.io */
+/*! TACHYONS v4.9.0 | http://tachyons.io */
 
+/*
+
+   BACKGROUND SIZE
+   Docs: http://tachyons.io/docs/themes/background-size/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
 /*
   Often used in combination with background image set as an inline style
   on an html element.
 */
 .cover { background-size: cover !important; }
 .contain { background-size: contain !important; }
-
 /*
-    BOX SIZING
- */
 
-.bbox { box-sizing: border-box; }
-.cbox { box-sizing: content-box; }
-
-/*
     BACKGROUND POSITION
+
+    Base:
+    bg = background
+
+    Modifiers:
+    -center = center center
+    -top = top center
+    -right = center right
+    -bottom = bottom center
+    -left = center left
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
  */
 .bgCenter { background-repeat: no-repeat; background-position: center center; }
 .bgTop { background-repeat: no-repeat; background-position: top center; }
@@ -26,13 +46,35 @@
 
    OUTLINES
 
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
 */
-/*.outline { outline: 1px solid; }*/
-/*.outline-transparent { outline: 1px solid transparent; }*/
+.outline { outline: 1px solid; }
+.outlineTransparent { outline: 1px solid transparent; }
 .outline0 { outline: 0; }
 /*
 
     BORDERS
+    Docs: http://tachyons.io/docs/themes/borders/
+
+    Base:
+      b = border
+
+    Modifiers:
+      a = all
+      t = top
+      r = right
+      b = bottom
+      l = left
+      n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
 */
 .ba { border-style: solid; border-width: 1px; }
@@ -44,6 +86,7 @@
 /*
 
    BORDER COLORS
+   Docs: http://tachyons.io/docs/themes/borders/
 
    Border colors can be used to extend the base
    border classes ba,bt,bb,br,bl found in the _borders.css file.
@@ -52,677 +95,14 @@
    to that of the current text color. These classes are for the cases
    where you desire for the text and border colors to be different.
 
-*/
-
-.bWhite { border-color: #fff; }
-.bWhite90 { border-color: rgba( 255, 255, 255, .9 ); }
-.bWhite80 { border-color: rgba( 255, 255, 255, .8 ); }
-.bWhite70 { border-color: rgba( 255, 255, 255, .7 ); }
-.bWhite60 { border-color: rgba( 255, 255, 255, .6 ); }
-.bWhite50 { border-color: rgba( 255, 255, 255, .5 ); }
-.bWhite40 { border-color: rgba( 255, 255, 255, .4 ); }
-.bWhite30 { border-color: rgba( 255, 255, 255, .3 ); }
-.bWhite20 { border-color: rgba( 255, 255, 255, .2 ); }
-.bWhite10 { border-color: rgba( 255, 255, 255, .1 ); }
-.bWhite05 { border-color: rgba( 255, 255, 255, .05 ); }
-.bBlack { border-color: #000; }
-.bBlack90 { border-color: rgba( 0, 0, 0, .9 ); }
-.bBlack80 { border-color: rgba( 0, 0, 0, .8 ); }
-.bBlack70 { border-color: rgba( 0, 0, 0, .7 ); }
-.bBlack60 { border-color: rgba( 0, 0, 0, .6 ); }
-.bBlack50 { border-color: rgba( 0, 0, 0, .5 ); }
-.bBlack40 { border-color: rgba( 0, 0, 0, .4 ); }
-.bBlack30 { border-color: rgba( 0, 0, 0, .3 ); }
-.bBlack20 { border-color: rgba( 0, 0, 0, .2 ); }
-.bBlack10 { border-color: rgba( 0, 0, 0, .1 ); }
-.bBlack05 { border-color: rgba( 0, 0, 0, .05 ); }
-
-.bGreen { border-color: $green; }
-.bGreen50 { border-color: $green50; }
-.bBlue { border-color: $blue; }
-
-.bDarkBlue { border-color: $darkBlue; }
-.bDarkBlue90 { border-color: $darkBlue90; }
-.bDarkBlue80 { border-color: $darkBlue80; }
-.bDarkBlue70 { border-color: $darkBlue70; }
-.bDarkBlue60 { border-color: $darkBlue60; }
-.bDarkBlue50 { border-color: $darkBlue50; }
-.bDarkBlue40 { border-color: $darkBlue40; }
-.bDarkBlue30 { border-color: $darkBlue30; }
-.bDarkBlue20 { border-color: $darkBlue20; }
-.bDarkBlue10 { border-color: $darkBlue10; }
-.bDarkBlue06 { border-color: $darkBlue06; }
-.bDarkBlue05 { border-color: $darkBlue05; }
-
-
-.bDarkerBlue { border-color: $darkerBlue; }
-.bRed { border-color: $red; }
-.bRed10 { border-color: $red10; }
-.bRed20 { border-color: $red20; }
-.bRed30 { border-color: $red30; }
-
-.bLightOrange { border-color: $lightOrange; }
-.bLightOrange10 { border-color: $lightOrange10; }
-.bLightOrange20 { border-color: $lightOrange20; }
-.bLightOrange30 { border-color: $lightOrange30; }
-
-/*
-
-   BORDER RADIUS
-   Docs: http://tachyons.io/docs/themes/border-radius/
-
    Base:
-     br   = border-radius
+     b = border
 
    Modifiers:
-     0    = 0/none
-     1    = 1st step in scale
-     2    = 2nd step in scale
-     3    = 3rd step in scale
-     4    = 4th step in scale
-
-   Literal values:
-     -100 = 100%
-     -pill = 9999px
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.br0 { border-radius: 0; }
-.br1 { border-radius: 1px; }
-.br2 { border-radius: 2px; }
-.br100 { border-radius: 100%; }
-.brPill { border-radius: 9999px; }
-.brBottom { border-top-left-radius: 0; border-top-right-radius: 0; }
-.brTop { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
-.brRight { border-top-left-radius: 0; border-bottom-left-radius: 0; }
-.brLeft { border-top-right-radius: 0; border-bottom-right-radius: 0; }
-/*
-
-   BORDER STYLES
-   Docs: http://tachyons.io/docs/themes/borders/
-
-   Depends on base border module in _borders.css
-
-   Base:
-     b = border-style
-
-   Modifiers:
-     --none   = none
-     --dotted = dotted
-     --dashed = dashed
-     --solid  = solid
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
- */
-.bDotted { border-style: dotted; }
-.bDashed { border-style: dashed; }
-.bSolid { border-style: solid; }
-.bNone { border-style: none; }
-/*
-
-   BORDER WIDTHS
-   Docs: http://tachyons.io/docs/themes/borders/
-
-   Base:
-     bw = border-width
-
-   Modifiers:
-     0 = 0 width border
-     1 = 1st step in border-width scale
-     2 = 2nd step in border-width scale
-     3 = 3rd step in border-width scale
-     4 = 4th step in border-width scale
-     5 = 5th step in border-width scale
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.bw0 { border-width: 0; }
-.bw1 { border-width: 1px; }
-.bw2 { border-width: 2px; }
-/* Resets */
-.bt0 { border-top-width: 0; }
-.br0 { border-right-width: 0; }
-.bb0 { border-bottom-width: 0; }
-.bl0 { border-left-width: 0; }
-/*
-
-  BOX-SHADOW
-  Docs: http://tachyons.io/docs/themes/box-shadow/
-
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
- */
-
-.buttonShadow { box-shadow: 0px 1px 3px 0px $gray20}
-.overlayShadow { box-shadow: 0 1px 10px 0 rgba(0,0,0,0.15) }
-/*.shadow-1 { box-shadow: 0px 0px 4px 2px rgba( 0, 0, 0, 0.2 ); }*/
-/*.shadow-2 { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, 0.2 ); }*/
-/*.shadow-3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, 0.2 ); }*/
-/*.shadow-4 { box-shadow: 2px 2px 8px 0px rgba( 0, 0, 0, 0.2 ); }*/
-/*.shadow-5 { box-shadow: 4px 4px 8px 0px rgba( 0, 0, 0, 0.2 ); }*/
-/*
-
-   CODE
-
-*/
-.pre { overflow-x: auto; overflow-y: hidden; overflow: scroll; }
-/*
-
-   COORDINATES
-   Docs: http://tachyons.io/docs/layout/position/
-
-   Use in combination with the position module.
-
-   Base:
-     top
-     bottom
-     right
-     left
-
-   Modifiers:
-     -0  = literal value 0
-     -1  = literal value 1
-     -2  = literal value 2
-     --1 = literal value -1
-     --2 = literal value -2
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.top0 { top: 0; }
-.top4 { top: $size04; }
-.top6 { top: $size06; }
-.top10 { top: $size10; }
-.top16 { top: $size16; }
-.top25 { top: $size25; }
-.top38 { top: $size38; }
-.top60 { top: $size60; }
-.top96 { top: $size96; }
-
-.top50 { top: 50%; }
-.top100 { top: 100%; }
-
-.right0 { right: 0; }
-.right4 { right: $size04; }
-.right6 { right: $size06; }
-.right10 { right: $size10; }
-.right16 { right: $size16; }
-.right25 { right: $size25; }
-.right38 { right: $size38; }
-.right60 { right: $size60; }
-.right96 { right: $size96; }
-
-.right50 { right: 50%; }
-.right100 { right: 100%; }
-
-.bottom0 { bottom: 0; }
-.bottom4 { bottom: $size04; }
-.bottom6 { bottom: $size06; }
-.bottom10 { bottom: $size10; }
-.bottom16 { bottom: $size16; }
-.bottom25 { bottom: $size25; }
-.bottom38 { bottom: $size38; }
-.bottom60 { bottom: $size60; }
-.bottom96 { bottom: $size96; }
-
-.bottom50 { bottom: 50%; }
-.bottom100 { bottom: 100%; }
-
-.left0 { left: 0; }
-.left4 { left: $size04; }
-.left6 { left: $size06; }
-.left10 { left: $size10; }
-.left16 { left: $size16; }
-.left25 { left: $size25; }
-.left38 { left: $size38; }
-.left60 { left: $size60; }
-.left96 { left: $size96; }
-
-.left50 { left: 50%; }
-.left100 { left: 100%; }
-
-.absoluteFill { top: 0; right: 0; bottom: 0; left: 0; }
-
-/*
-
-   TRANSLATION
+   Color-name = each color variable name is also a border color name
 
 */
 
-.tlCenter {-webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); }
-.tlHCenter { -webkit-transform: translate(-50%,0); transform: translate(-50%,0); }
-.tlVCenter { -webkit-transform: translate(0,-50%); transform: translate(0,-50%); }
-
-/*
-
-   DISPLAY
-   Docs: http://tachyons.io/docs/layout/display
-
-   Base:
-    d = display
-
-   Modifiers:
-    n     = none
-    b     = block
-    ib    = inline-block
-    it    = inline-table
-    t     = table
-    tc    = table-cell
-    tr    = table-row
-    tcol  = table-column
-    tcolg = table-column-group
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.dn { display: none; }
-.di { display: inline; }
-.db { display: block; }
-.dib { display: inline-block; }
-.dit { display: inline-table; }
-.dt { display: table; }
-.dtc { display: table-cell; }
-.dtRow { display: table-row; }
-.dtRowGroup { display: table-row-group; }
-.dtColumn { display: table-column; }
-.dtColumnGroup { display: table-column-group; }
-/*
-  This will set table to full width and then
-  all cells will be equal width
-*/
-.dtFixed { table-layout: fixed; width: 100%; }
-/*
-
-  FLEXBOX
-
-  Media Query Extensions:
-   -ns = not-small
-   -m  = medium
-   -l  = large
-
-*/
-.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.inlineFlex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
-/* 1. Fix for Chrome 44 bug.
- * https://code.google.com/p/chromium/issues/detail?id=506893 */
-.flex1 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
-.flexAuto { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
-.flexFixed { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
-.flexSlide { -ms-flex: 0 0 100%; flex: 0 0 100% }
-.flexNone { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
-.flexColumn { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-.flexRow { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-.flexWrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.itemsStart { -webkit-box-align: start; -ms-flex-align: start; -ms-grid-row-align: flex-start; align-items: flex-start; }
-.itemsEnd { -webkit-box-align: end; -ms-flex-align: end; -ms-grid-row-align: flex-end; align-items: flex-end; }
-.itemsCenter { -webkit-box-align: center; -ms-flex-align: center; -ms-grid-row-align: center; align-items: center; }
-.itemsBaseline { -webkit-box-align: baseline; -ms-flex-align: baseline; -ms-grid-row-align: baseline; align-items: baseline; }
-.itemsStretch { -webkit-box-align: stretch; -ms-flex-align: stretch; -ms-grid-row-align: stretch; align-items: stretch; }
-.selfStart { -ms-flex-item-align: start; align-self: flex-start; }
-.selfEnd { -ms-flex-item-align: end; align-self: flex-end; }
-.selfCenter { -ms-flex-item-align: center; align-self: center; }
-.selfBaseline { -ms-flex-item-align: baseline; align-self: baseline; }
-.selfStretch { -ms-flex-item-align: stretch; align-self: stretch; }
-.justifyStart { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
-.justifyEnd { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
-.justifyCenter { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.justifyBetween { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.justifyAround { -ms-flex-pack: distribute; justify-content: space-around; }
-.contentStart { -ms-flex-line-pack: start; align-content: flex-start; }
-.contentEnd { -ms-flex-line-pack: end; align-content: flex-end; }
-.contentCenter { -ms-flex-line-pack: center; align-content: center; }
-.contentBetween { -ms-flex-line-pack: justify; align-content: space-between; }
-.contentAround { -ms-flex-line-pack: distribute; align-content: space-around; }
-.contentStretch { -ms-flex-line-pack: stretch; align-content: stretch; }
-.order0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
-.order1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
-.order2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
-.order3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }
-.order4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }
-.order5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }
-.order6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }
-.order7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
-.order8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
-.orderLast { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
-/*
-
-   FONT FAMILY GROUPS
-   Docs: http://tachyons.io/docs/typography/font-family/
-
-*/
-.sansSerif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
-
-/*TODO: change font-family globally */
-.code { font-family: Consolas, monaco, monospace; }
-
-/*
-
-   FONT STYLE
-   Docs: http://tachyons.io/docs/typography/font-style/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.i { font-style: italic; }
-.fsNormal { font-style: normal; }
-/*
-
-   FONT WEIGHT
-   Docs: http://tachyons.io/docs/typography/font-weight/
-
-   Base
-     fw = font-weight
-
-   Modifiers:
-     1 = literal value 100
-     2 = literal value 200
-     3 = literal value 300
-     4 = literal value 400
-     5 = literal value 500
-     6 = literal value 600
-     7 = literal value 700
-     8 = literal value 800
-     9 = literal value 900
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.normal { font-weight: normal; }
-.b { font-weight: bold; }
-/*.fw1 { font-weight: 100; }*/
-/*.fw2 { font-weight: 200; }*/
-.fw3 { font-weight: 300; }
-.fw4 { font-weight: 400; }
-.fw5 { font-weight: 500; }
-.fw6 { font-weight: 600; }
-.fw7 { font-weight: 700; }
-/*.fw8 { font-weight: 800; }*/
-/*.fw9 { font-weight: 900; }*/
-/*
-
-   FORMS
-
-*/
-.inputReset { -webkit-appearance: none; -moz-appearance: none; }
-.buttonReset::-moz-focus-inner, .inputReset::-moz-focus-inner { border: 0; padding: 0; }
-/*
-
-   HEIGHTS
-   Docs: http://tachyons.io/docs/layout/heights/
-
-   Base:
-     h = height
-     min-h = min-height
-     min-vh = min-height vertical screen height
-     vh = vertical screen height
-
-   Modifiers
-     1 = 1st step in height scale
-     2 = 2nd step in height scale
-     3 = 3rd step in height scale
-     4 = 4th step in height scale
-     5 = 5th step in height scale
-
-     -25   = literal value 25%
-     -50   = literal value 50%
-     -75   = literal value 75%
-     -100  = literal value 100%
-
-     -auto = string value of auto
-     -inherit = string value of inherit
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-/* Height Scale */
-/*.h1 { height: 1rem; }*/
-/*.h2 { height: 2rem; }*/
-/*.h3 { height: 4rem; }*/
-/*.h4 { height: 8rem; }*/
-/*.h5 { height: 16rem; }*/
-/* Height Percentages - Based off of height of parent */
-/*.h-25 { height: 25%; }*/
-/*.h-50 { height: 50%; }*/
-/*.h-75 { height: 75%; }*/
-.h100 { height: 100%; }
-.minH100 { min-height: 100%; }
-/* Screen Height Percentage */
-/*.vh-25 { height: 25vh; }*/
-/*.vh-50 { height: 50vh; }*/
-/*.vh-75 { height: 75vh; }*/
-.vh100 { height: 100vh; }
-.minVh100 { min-height: 100vh; }
-/* String Properties */
-.hAuto { height: auto; }
-.hInherit { height: inherit; }
-
-/*
-
-   LETTER SPACING
-   Docs: http://tachyons.io/docs/typography/tracking/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.mono {
-  font-family: 'Source Code Pro', monospace;
-}
-.tracked { letter-spacing: 1px; }
-/*.tracked-tight { letter-spacing: -.05em; }*/
-/*.tracked-mega { letter-spacing: .25em; }*/
-/*
-
-   LINE HEIGHT / LEADING
-   Docs: http://tachyons.io/docs/typography/line-height
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.lhSolid { line-height: 1; }
-.lhTitle { line-height: $titleLineheight; }
-.lhCopy { line-height: $copyLineheight; }
-/*
-
-   LINKS
-   Docs: http://tachyons.io/docs/elements/links/
-
-*/
-.link { text-decoration: none; -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:link, .link:visited { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:hover { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-.link:active { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; }
-/*.link:focus { -webkit-transition: color .15s ease-in; transition: color .15s ease-in; outline: 1px dotted currentColor; }*/
-/*
-
-   LISTS
-   http://tachyons.io/docs/elements/lists/
-
-*/
-.list { list-style-type: none; }
-/*
-
-   MAX WIDTHS
-
-   Base:
-     mw = max-width
-
-     -100 = literal value 100%
-
-     -none  = string value none
-
-*/
-/* Max Width Percentages */
-.mw100 { max-width: 100%; }
-/* Max Width String Properties */
-.mwNone { max-width: none; }
-/*
-
-   WIDTHS
-   Docs: http://tachyons.io/docs/layout/widths/
-
-   Base:
-     w = width
-
-   Modifiers
-     1 = 1st step in width scale
-     2 = 2nd step in width scale
-     3 = 3rd step in width scale
-     4 = 4th step in width scale
-     5 = 5th step in width scale
-
-     -10  = literal value 10%
-     -20  = literal value 20%
-     -25  = literal value 25%
-     -33  = literal value 33%
-     -34  = literal value 34%
-     -40  = literal value 40%
-     -50  = literal value 50%
-     -60  = literal value 60%
-     -75  = literal value 75%
-     -80  = literal value 80%
-     -100 = literal value 100%
-
-     -third = 100% / 3 (Not supported in opera mini or IE8)
-     -auto  = string value auto
-
-
-*/
-/* Width Scale */
-
-.w10 { width: 10%; }
-.w20 { width: 20%; }
-.w25 { width: 25%; }
-.w30 { width: 30%; }
-.w40 { width: 40%; }
-.w50 { width: 50%; }
-.w60 { width: 60%; }
-.w70 { width: 70%; }
-.w75 { width: 75%; }
-.w80 { width: 80%; }
-.w90 { width: 90%; }
-.w100 { width: 100%; }
-.wThird { width: calc( 100% / 3 ); }
-.wTwoThirds { width: calc( 100% / 1.5 ); }
-.wAuto { width: auto; }
-
-.hS04 { height: $size04; }
-.hS06 { height: $size06; }
-.hS10 { height: $size10; }
-.hS12 { height: $size12; }
-.hS16 { height: $size16; }
-.hS20 { height: $size20; }
-.hS25 { height: $size25; }
-.hS38 { height: $size38; }
-.hS60 { height: $size60; }
-.hS96 { height: $size96; }
-
-.wS04 { width: $size04; }
-.wS06 { width: $size06; }
-.wS10 { width: $size10; }
-.wS12 { width: $size12; }
-.wS16 { width: $size16; }
-.wS20 { width: $size20; }
-.wS25 { width: $size25; }
-.wS38 { width: $size38; }
-.wS60 { width: $size60; }
-.wS96 { width: $size96; }
-
-/*
-
-    OVERFLOW
-
- */
-.overflowVisible { overflow: visible; }
-.overflowHidden { overflow: hidden; }
-.overflowScroll { overflow: scroll; }
-.overflowAuto { overflow: auto; }
-.overflowXVisible { overflow-x: visible; }
-.overflowXHidden { overflow-x: hidden; }
-.overflowXScroll { overflow-x: scroll; }
-.overflowXAuto { overflow-x: auto; }
-.overflowYVisible { overflow-y: visible; }
-.overflowYHidden { overflow-y: hidden; }
-.overflowYScroll { overflow-y: scroll; }
-.overflowYAuto { overflow-y: auto; }
-
-
-/*
-    Do not show the scrollbar.
-*/
-.nosb {
-    -ms-overflow-style: none;
-}
-
-.nosb::-webkit-scrollbar {
-    display: none;
-}
-
-/*
-
-   POSITIONING
-   Docs: http://tachyons.io/docs/layout/position/
-
-
-*/
-.static { position: static; }
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed { position: fixed; }
-/*
-
-    OPACITY
-    Docs: http://tachyons.io/docs/themes/opacity/
-
-*/
-.o100 { opacity: 1; }
-.o90 { opacity: .9; }
-.o80 { opacity: .8; }
-.o70 { opacity: .7; }
-.o60 { opacity: .6; }
-.o50 { opacity: .5; }
-.o40 { opacity: .4; }
-.o30 { opacity: .3; }
-.o20 { opacity: .2; }
-.o10 { opacity: .1; }
-.o05 { opacity: .05; }
-.o025 { opacity: .025; }
-.o0 { opacity: 0; }
 /*
    SKINS
 */
@@ -793,6 +173,8 @@
 .lightgreen30 { color: $lightGreen30 }
 .lightgreen50 { color: $lightGreen50 }
 
+.brown { color: $pbrown; }
+
 /* Background colors */
 .bgTransparent { background-color: transparent; }
 .bgNone { background: none; }
@@ -860,7 +242,6 @@
 .bgRed { background-color: $red; }
 .bgRed10 { background-color: $red10; }
 
-/*TODO: check if bgrRed is used somewhere*/
 .bgrRed { background-color: $red; }
 
 .bgLightOrange { background-color: $lightOrange; }
@@ -887,7 +268,6 @@
 .bgLightgreen30 { background-color: $lightGreen30 }
 .bgLightgreen50 { background-color: $lightGreen50 }
 
-.brown { color: $pbrown; }
 .bgPblue20 { background-color: $pblue20 }
 .bgPred20 { background-color: $pred20 }
 .bgPyellow40 { background-color: $pyellow40 }
@@ -897,8 +277,769 @@
 .bgPurple { background-color: $purple; }
 .bgPurple20 { background-color: $purple20; }
 
+/* Border colors */
+.bTransparent { border-color: transparent; }
+.bInherit { border-color: inherit; }
+
+.bBlack90 { border-color: rgba( 0, 0, 0, .9 ); }
+.bBlack80 { border-color: rgba( 0, 0, 0, .8 ); }
+.bBlack70 { border-color: rgba( 0, 0, 0, .7 ); }
+.bBlack60 { border-color: rgba( 0, 0, 0, .6 ); }
+.bBlack50 { border-color: rgba( 0, 0, 0, .5 ); }
+.bBlack40 { border-color: rgba( 0, 0, 0, .4 ); }
+.bBlack30 { border-color: rgba( 0, 0, 0, .3 ); }
+.bBlack20 { border-color: rgba( 0, 0, 0, .2 ); }
+.bBlack10 { border-color: rgba( 0, 0, 0, .1 ); }
+.bBlack07 { border-color: rgba( 0, 0, 0, .07 ); }
+.bBlack04 { border-color: rgba( 0, 0, 0, .04 ); }
+.bBlack02 { border-color: rgba( 0, 0, 0, .02 ); }
+
+.bWhite90 { border-color: rgba( 255, 255, 255, .9 ); }
+.bWhite80 { border-color: rgba( 255, 255, 255, .8 ); }
+.bWhite70 { border-color: rgba( 255, 255, 255, .7 ); }
+.bWhite60 { border-color: rgba( 255, 255, 255, .6 ); }
+.bWhite50 { border-color: rgba( 255, 255, 255, .5 ); }
+.bWhite40 { border-color: rgba( 255, 255, 255, .4 ); }
+.bWhite30 { border-color: rgba( 255, 255, 255, .3 ); }
+.bWhite20 { border-color: rgba( 255, 255, 255, .2 ); }
+.bWhite10 { border-color: rgba( 255, 255, 255, .1 ); }
+.bWhite07 { border-color: rgba( 255, 255, 255, .07 ); }
+.bWhite04 { border-color: rgba( 255, 255, 255, .04 ); }
+
+.bBlack { border-color: #000; }
+.bWhite { border-color: #fff; }
+.bBlue { border-color: $blue; }
+.bBlue20 { border-color: $blue20; }
+.bBlue10 { border-color: $blue10; }
+.bBlue50 { border-color: $blue50; }
+
+.bDarkBlue { border-color: $darkBlue; }
+.bDarkBlue90 { border-color: $darkBlue90; }
+.bDarkBlue80 { border-color: $darkBlue80; }
+.bDarkBlue70 { border-color: $darkBlue70; }
+.bDarkBlue60 { border-color: $darkBlue60; }
+.bDarkBlue50 { border-color: $darkBlue50; }
+.bDarkBlue40 { border-color: $darkBlue40; }
+.bDarkBlue30 { border-color: $darkBlue30; }
+.bDarkBlue20 { border-color: $darkBlue20; }
+.bDarkBlue10 { border-color: $darkBlue10; }
+.bDarkBlue07 { border-color: $darkBlue07; }
+.bDarkBlue04 { border-color: $darkBlue04; }
+
+.bPink { border-color: $pink; }
+.bPink90 { border-color: $pink90; }
+.bPink80 { border-color: $pink80; }
+.bPink70 { border-color: $pink70; }
+.bPink60 { border-color: $pink60; }
+.bPink50 { border-color: $pink50; }
+.bPink40 { border-color: $pink40; }
+.bPink30 { border-color: $pink30; }
+.bPink20 { border-color: $pink20; }
+.bPink10 { border-color: $pink10; }
+
+.bDarkerBlue { border-color: $darkerBlue; }
+.bDarkestBlue { border-color: $darkestBlue; }
+.bOrange { border-color: $orange; }
+
+.bRed { border-color: $red; }
+.bRed10 { border-color: $red10; }
+
+.brRed { border-color: $red; }
+
+.bLightOrange { border-color: $lightOrange; }
+.bLightOrange10 { border-color: $lightOrange10; }
+.bLightOrange20 { border-color: $lightOrange20; }
+.bLightOrange30 { border-color: $lightOrange30; }
+.bDarkBlueGray { border-color: $darkBlueGray }
+
+.bGreen { border-color: rgba(39,174,96,1); }
+.bGreen10 { border-color: rgba(39,174,96,0.1); }
+.bGreen20 { border-color: rgba(39,174,96,0.2); }
+.bGreen30 { border-color: rgba(39,174,96,0.3); }
+.bGreen40 { border-color: rgba(39,174,96,0.4); }
+.bGreen50 { border-color: rgba(39,174,96,0.5); }
+.bGreen60 { border-color: rgba(39,174,96,0.6); }
+.bGreen70 { border-color: rgba(39,174,96,0.7); }
+.bGreen80 { border-color: rgba(39,174,96,0.8); }
+.bGreen90 { border-color: rgba(39,174,96,0.9); }
+
+.bLightergreen { border-color: $lighterGreen }
+.bLightgreen05 { border-color: $lightGreen05 }
+.bLightgreen10 { border-color: $lightGreen10 }
+.bLightgreen20 { border-color: $lightGreen20 }
+.bLightgreen30 { border-color: $lightGreen30 }
+.bLightgreen50 { border-color: $lightGreen50 }
+
+.bPblue20 { border-color: $pblue20 }
+.bPred20 { border-color: $pred20 }
+.bPyellow40 { border-color: $pyellow40 }
+.bPlightgreen50 { border-color: $plightgreen50 }
+
+.bLightGray { border-color: $lightGray; }
+.bPurple { border-color: $purple; }
+.bPurple20 { border-color: $purple20; }
+
+/*
+
+   BORDER RADIUS
+   Docs: http://tachyons.io/docs/themes/border-radius/
+
+   Base:
+     br   = border-radius
+
+   Modifiers:
+     0    = 0/none
+     1    = 1st step in scale
+     2    = 2nd step in scale
+     3    = 3rd step in scale
+     4    = 4th step in scale
+
+   Literal values:
+     -100 = 100%
+     -pill = 9999px
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.br0 { border-radius: 0; }
+.br1 { border-radius: .125rem; }
+.br2 { border-radius: .25rem; }
+.br3 { border-radius: .5rem; }
+.br4 { border-radius: 1rem; }
+.br100 { border-radius: 100%; }
+.brPill { border-radius: 9999px; }
+.brBottom { border-top-left-radius: 0; border-top-right-radius: 0; }
+.brTop { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.brRight { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+.brLeft { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+/*
+
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     None   = none
+     Dotted = dotted
+     Dashed = dashed
+     Solid  = solid
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+.bDotted { border-style: dotted; }
+.bDashed { border-style: dashed; }
+.bSolid { border-style: solid; }
+.bNone { border-style: none; }
+/*
+
+   BORDER WIDTHS
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Base:
+     bw = border-width
+
+   Modifiers:
+     0 = 0 width border
+     1 = 1st step in border-width scale
+     2 = 2nd step in border-width scale
+     3 = 3rd step in border-width scale
+     4 = 4th step in border-width scale
+     5 = 5th step in border-width scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.bw0 { border-width: 0; }
+.bw1 { border-width: .125rem; }
+.bw2 { border-width: .25rem; }
+.bw3 { border-width: .5rem; }
+.bw4 { border-width: 1rem; }
+.bw5 { border-width: 2rem; }
+/* Resets */
+.bt0 { border-top-width: 0; }
+.br0 { border-right-width: 0; }
+.bb0 { border-bottom-width: 0; }
+.bl0 { border-left-width: 0; }
+/*
+
+  BOX-SHADOW
+  Docs: http://tachyons.io/docs/themes/box-shadow/
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+ */
+.shadow1 { box-shadow: 0 0 4px 2px rgba( 0, 0, 0, .2 ); }
+.shadow2 { box-shadow: 0 0 8px 2px rgba( 0, 0, 0, .2 ); }
+.shadow3 { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, .2 ); }
+.shadow4 { box-shadow: 2px 2px 8px 0 rgba( 0, 0, 0, .2 ); }
+.shadow5 { box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 ); }
+/*
+
+   CODE
+
+*/
+.pre { overflow-x: auto; overflow-y: hidden; overflow: scroll; }
+/*
+
+   COORDINATES
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Use in combination with the position module.
+
+   Base:
+     top
+     bottom
+     right
+     left
+
+   Modifiers:
+     -0  = literal value 0
+     -1  = literal value 1
+     -2  = literal value 2
+     1 = literal value -1
+     2 = literal value -2
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.top0 { top: 0; }
+.right0 { right: 0; }
+.bottom0 { bottom: 0; }
+.left0 { left: 0; }
+.top1 { top: 1rem; }
+.right1 { right: 1rem; }
+.bottom1 { bottom: 1rem; }
+.left1 { left: 1rem; }
+.top2 { top: 2rem; }
+.right2 { right: 2rem; }
+.bottom2 { bottom: 2rem; }
+.left2 { left: 2rem; }
+.top1 { top: -1rem; }
+.right1 { right: -1rem; }
+.bottom1 { bottom: -1rem; }
+.left1 { left: -1rem; }
+.top2 { top: -2rem; }
+.right2 { right: -2rem; }
+.bottom2 { bottom: -2rem; }
+.left2 { left: -2rem; }
+.absoluteFill { top: 0; right: 0; bottom: 0; left: 0; }
+/*
+
+   CLEARFIX
+   http://tachyons.io/docs/layout/clearfix/
+
+*/
+/* Nicolas Gallaghers Clearfix solution
+   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.cn { clear: none; }
+/*
+
+   DISPLAY
+   Docs: http://tachyons.io/docs/layout/display
+
+   Base:
+    d = display
+
+   Modifiers:
+    n     = none
+    b     = block
+    ib    = inline-block
+    it    = inline-table
+    t     = table
+    tc    = table-cell
+    t-row          = table-row
+    t-columm       = table-column
+    t-column-group = table-column-group
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; }
+.dit { display: inline-table; }
+.dt { display: table; }
+.dtc { display: table-cell; }
+.dtRow { display: table-row; }
+.dtRowGroup { display: table-row-group; }
+.dtColumn { display: table-column; }
+.dtColumnGroup { display: table-column-group; }
+/*
+  This will set table to full width and then
+  all cells will be equal width
+*/
+.dtFixed { table-layout: fixed; width: 100%; }
+/*
+
+  FLEXBOX
+
+  Media Query Extensions:
+   -ns = not-small
+   -m  = medium
+   -l  = large
+
+*/
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.inlineFlex { display: -webkit-inline-box; display: -ms-inline-flexbox; display: inline-flex; }
+/* 1. Fix for Chrome 44 bug.
+ * https://code.google.com/p/chromium/issues/detail?id=506893 */
+.flexAuto { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; min-width: 0; /* 1 */ min-height: 0; /* 1 */ }
+.flexNone { -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+.flexColumn { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.flexRow { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
+.flexWrap { -ms-flex-wrap: wrap; flex-wrap: wrap; }
+.flexNowrap { -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
+.flexWrapReverse { -ms-flex-wrap: wrap-reverse; flex-wrap: wrap-reverse; }
+.flexColumnReverse { -webkit-box-orient: vertical; -webkit-box-direction: reverse; -ms-flex-direction: column-reverse; flex-direction: column-reverse; }
+.flexRowReverse { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+.itemsStart { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.itemsEnd { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+.itemsCenter { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.itemsBaseline { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.itemsStretch { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+.selfStart { -ms-flex-item-align: start; align-self: flex-start; }
+.selfEnd { -ms-flex-item-align: end; align-self: flex-end; }
+.selfCenter { -ms-flex-item-align: center; -ms-gridRow-align: center; align-self: center; }
+.selfBaseline { -ms-flex-item-align: baseline; align-self: baseline; }
+.selfStretch { -ms-flex-item-align: stretch; -ms-gridRow-align: stretch; align-self: stretch; }
+.justifyStart { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+.justifyEnd { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
+.justifyCenter { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.justifyBetween { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.justifyAround { -ms-flex-pack: distribute; justify-content: space-around; }
+.contentStart { -ms-flex-line-pack: start; align-content: flex-start; }
+.contentEnd { -ms-flex-line-pack: end; align-content: flex-end; }
+.contentCenter { -ms-flex-line-pack: center; align-content: center; }
+.contentBetween { -ms-flex-line-pack: justify; align-content: space-between; }
+.contentAround { -ms-flex-line-pack: distribute; align-content: space-around; }
+.contentStretch { -ms-flex-line-pack: stretch; align-content: stretch; }
+.order0 { -webkit-box-ordinal-group: 1; -ms-flex-order: 0; order: 0; }
+.order1 { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; }
+.order2 { -webkit-box-ordinal-group: 3; -ms-flex-order: 2; order: 2; }
+.order3 { -webkit-box-ordinal-group: 4; -ms-flex-order: 3; order: 3; }
+.order4 { -webkit-box-ordinal-group: 5; -ms-flex-order: 4; order: 4; }
+.order5 { -webkit-box-ordinal-group: 6; -ms-flex-order: 5; order: 5; }
+.order6 { -webkit-box-ordinal-group: 7; -ms-flex-order: 6; order: 6; }
+.order7 { -webkit-box-ordinal-group: 8; -ms-flex-order: 7; order: 7; }
+.order8 { -webkit-box-ordinal-group: 9; -ms-flex-order: 8; order: 8; }
+.orderLast { -webkit-box-ordinal-group: 100000; -ms-flex-order: 99999; order: 99999; }
+.flexGrow0 { -webkit-box-flex: 0; -ms-flex-positive: 0; flex-grow: 0; }
+.flexGrow1 { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
+.flexShrink0 { -ms-flex-negative: 0; flex-shrink: 0; }
+.flexShrink1 { -ms-flex-negative: 1; flex-shrink: 1; }
+/*
+
+   FLOATS
+   http://tachyons.io/docs/layout/floats/
+
+   1. Floated elements are automatically rendered as block level elements.
+      Setting floats to display inline will fix the double margin bug in
+      ie6. You know... just in case.
+
+   2. Don't forget to clearfix your floats with .cf
+
+   Base:
+     f = float
+
+   Modifiers:
+     l = left
+     r = right
+     n = none
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.fl { float: left; _display: inline; }
+.fr { float: right; _display: inline; }
+.fn { float: none; }
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+.fSansSerif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+.fSerif { font-family: georgia, times, serif; }
+.fSystemSansSerif { font-family: sans-serif; }
+.fSystemSerif { font-family: serif; }
+/* Monospaced Typefaces (for code) */
+/* From http://cssfontstack.com */
+.fConsolas { font-family: Consolas, monaco, monospace; }
+.fCourier { font-family: 'Courier Next', courier, monospace; }
+/* Sans-Serif Typefaces */
+.fHelvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
+.fAvenir { font-family: 'avenir next', avenir, sans-serif; }
+/* Serif Typefaces */
+.fAthelas { font-family: athelas, georgia, serif; }
+.fGeorgia { font-family: georgia, serif; }
+.fTimes { font-family: times, serif; }
+.fBodoni { font-family: "Bodoni MT", serif; }
+.fCalisto { font-family: "Calisto MT", serif; }
+.fGaramond { font-family: garamond, serif; }
+.fBaskerville { font-family: baskerville, serif; }
+/*
+
+   FONT STYLE
+   Docs: http://tachyons.io/docs/typography/font-style/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.i { font-style: italic; }
+.fsNormal { font-style: normal; }
+/*
+
+   FONT WEIGHT
+   Docs: http://tachyons.io/docs/typography/font-weight/
+
+   Base
+     fw = font-weight
+
+   Modifiers:
+     1 = literal value 100
+     2 = literal value 200
+     3 = literal value 300
+     4 = literal value 400
+     5 = literal value 500
+     6 = literal value 600
+     7 = literal value 700
+     8 = literal value 800
+     9 = literal value 900
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.normal { font-weight: normal; }
+.b { font-weight: bold; }
+.fw1 { font-weight: 100; }
+.fw2 { font-weight: 200; }
+.fw3 { font-weight: 300; }
+.fw4 { font-weight: 400; }
+.fw5 { font-weight: 500; }
+.fw6 { font-weight: 600; }
+.fw7 { font-weight: 700; }
+.fw8 { font-weight: 800; }
+.fw9 { font-weight: 900; }
+/*
+
+   HEIGHTS
+   Docs: http://tachyons.io/docs/layout/heights/
+
+   Base:
+     h = height
+     min-h = min-height
+     min-vh = min-height vertical screen height
+     vh = vertical screen height
+
+   Modifiers
+     1 = 1st step in height scale
+     2 = 2nd step in height scale
+     3 = 3rd step in height scale
+     4 = 4th step in height scale
+     5 = 5th step in height scale
+
+     -25   = literal value 25%
+     -50   = literal value 50%
+     -75   = literal value 75%
+     -100  = literal value 100%
+
+     -auto = string value of auto
+     -inherit = string value of inherit
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Height Scale */
+.h1 { height: 1rem; }
+.h2 { height: 2rem; }
+.h3 { height: 4rem; }
+.h4 { height: 8rem; }
+.h5 { height: 16rem; }
+/* Height Percentages - Based off of height of parent */
+.h25 { height: 25%; }
+.h50 { height: 50%; }
+.h75 { height: 75%; }
+.h100 { height: 100%; }
+.minH100 { min-height: 100%; }
+/* Screen Height Percentage */
+.vh25 { height: 25vh; }
+.vh50 { height: 50vh; }
+.vh75 { height: 75vh; }
+.vh100 { height: 100vh; }
+.minVh100 { min-height: 100vh; }
+/* String Properties */
+.hAuto { height: auto; }
+.hInherit { height: inherit; }
+/*
+
+   LETTER SPACING
+   Docs: http://tachyons.io/docs/typography/tracking/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.tracked { letter-spacing: .1em; }
+.trackedTight { letter-spacing: -.05em; }
+.trackedMega { letter-spacing: .25em; }
+/*
+
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.lhSolid { line-height: 1; }
+.lhTitle { line-height: 1.25; }
+.lhCopy { line-height: 1.5; }
+/*
+
+   LINKS
+   Docs: http://tachyons.io/docs/elements/links/
+
+*/
+.link { text-decoration: none; transition: color .15s ease-in; }
+.link:link, .link:visited { transition: color .15s ease-in; }
+.link:hover { transition: color .15s ease-in; }
+.link:active { transition: color .15s ease-in; }
+.link:focus { transition: color .15s ease-in; outline: 1px dotted currentColor; }
+/*
+
+   LISTS
+   http://tachyons.io/docs/elements/lists/
+
+*/
+.list { list-style-type: none; }
+/*
+
+   MAX WIDTHS
+   Docs: http://tachyons.io/docs/layout/max-widths/
+
+   Base:
+     mw = max-width
+
+   Modifiers
+     1 = 1st step in width scale
+     2 = 2nd step in width scale
+     3 = 3rd step in width scale
+     4 = 4th step in width scale
+     5 = 5th step in width scale
+     6 = 6st step in width scale
+     7 = 7nd step in width scale
+     8 = 8rd step in width scale
+     9 = 9th step in width scale
+
+     -100 = literal value 100%
+
+     -none  = string value none
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Max Width Percentages */
+.mw100 { max-width: 100%; }
+/* Max Width Scale */
+.mw1 { max-width: 1rem; }
+.mw2 { max-width: 2rem; }
+.mw3 { max-width: 4rem; }
+.mw4 { max-width: 8rem; }
+.mw5 { max-width: 16rem; }
+.mw6 { max-width: 32rem; }
+.mw7 { max-width: 48rem; }
+.mw8 { max-width: 64rem; }
+.mw9 { max-width: 96rem; }
+/* Max Width String Properties */
+.mwNone { max-width: none; }
+/*
+
+   WIDTHS
+   Docs: http://tachyons.io/docs/layout/widths/
+
+   Base:
+     w = width
+
+   Modifiers
+     1 = 1st step in width scale
+     2 = 2nd step in width scale
+     3 = 3rd step in width scale
+     4 = 4th step in width scale
+     5 = 5th step in width scale
+
+     -10  = literal value 10%
+     -20  = literal value 20%
+     -25  = literal value 25%
+     -30  = literal value 30%
+     -33  = literal value 33%
+     -34  = literal value 34%
+     -40  = literal value 40%
+     -50  = literal value 50%
+     -60  = literal value 60%
+     -70  = literal value 70%
+     -75  = literal value 75%
+     -80  = literal value 80%
+     -90  = literal value 90%
+     -100 = literal value 100%
+
+     -third      = 100% / 3 (Not supported in opera mini or IE8)
+     -two-thirds = 100% / 1.5 (Not supported in opera mini or IE8)
+     -auto       = string value auto
+
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Width Scale */
+.w1 { width: 1rem; }
+.w2 { width: 2rem; }
+.w3 { width: 4rem; }
+.w4 { width: 8rem; }
+.w5 { width: 16rem; }
+.w10 { width: 10%; }
+.w20 { width: 20%; }
+.w25 { width: 25%; }
+.w30 { width: 30%; }
+.w33 { width: 33%; }
+.w34 { width: 34%; }
+.w40 { width: 40%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w70 { width: 70%; }
+.w75 { width: 75%; }
+.w80 { width: 80%; }
+.w90 { width: 90%; }
+.w100 { width: 100%; }
+.wThird { width: calc( 100% / 3 ); }
+.wTwo-thirds { width: calc( 100% / 1.5 ); }
+.wAuto { width: auto; }
+/*
+
+    OVERFLOW
+
+    Media Query Extensions:
+      -ns = not-small
+      -m  = medium
+      -l  = large
+
+ */
+.overflowVisible { overflow: visible; }
+.overflowHidden { overflow: hidden; }
+.overflowScroll { overflow: scroll; }
+.overflowAuto { overflow: auto; }
+.overflowXVisible { overflow-x: visible; }
+.overflowXHidden { overflow-x: hidden; }
+.overflowXScroll { overflow-x: scroll; }
+.overflowXAuto { overflow-x: auto; }
+.overflowYVisible { overflow-y: visible; }
+.overflowYHidden { overflow-y: hidden; }
+.overflowYScroll { overflow-y: scroll; }
+.overflowYAuto { overflow-y: auto; }
+/*
+
+   POSITIONING
+   Docs: http://tachyons.io/docs/layout/position/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+/*
+
+    OPACITY
+    Docs: http://tachyons.io/docs/themes/opacity/
+
+*/
+.o100 { opacity: 1; }
+.o90 { opacity: .9; }
+.o80 { opacity: .8; }
+.o70 { opacity: .7; }
+.o60 { opacity: .6; }
+.o50 { opacity: .5; }
+.o40 { opacity: .4; }
+.o30 { opacity: .3; }
+.o20 { opacity: .2; }
+.o10 { opacity: .1; }
+.o05 { opacity: .05; }
+.o025 { opacity: .025; }
+.o0 { opacity: 0; }
+/*
+
+   ROTATIONS
+
+*/
+.rotate45 { -webkit-transform: rotate( 45deg ); transform: rotate( 45deg ); }
+.rotate90 { -webkit-transform: rotate( 90deg ); transform: rotate( 90deg ); }
+.rotate135 { -webkit-transform: rotate( 135deg ); transform: rotate( 135deg ); }
+.rotate180 { -webkit-transform: rotate( 180deg ); transform: rotate( 180deg ); }
+.rotate225 { -webkit-transform: rotate( 225deg ); transform: rotate( 225deg ); }
+.rotate270 { -webkit-transform: rotate( 270deg ); transform: rotate( 270deg ); }
+.rotate315 { -webkit-transform: rotate( 315deg ); transform: rotate( 315deg ); }
+/* Variables */
 /*
    SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
 
    Base:
      p = padding
@@ -912,237 +1053,209 @@
      r = right
      b = bottom
      l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
 */
-
-/* Padding all */
 .pa0 { padding: 0; }
-.pa4 { padding: $size04; }
-.pa6 { padding: $size06; }
-.pa10 { padding: $size10; }
-.pa12 { padding: $size12; }
-.pa16 { padding: $size16; }
-.pa20 { padding: $size20; }
-.pa25 { padding: $size25; }
-.pa38 { padding: $size38; }
-.pa60 { padding: $size60; }
-.pa96 { padding: $size96; }
-
-/* Padding horizonal */
-.ph0 { padding-left: 0; padding-right: 0; }
-.ph4 { padding-left: $size04; padding-right: $size04; }
-.ph6 { padding-left: $size06; padding-right: $size06; }
-.ph10 { padding-left: $size10; padding-right: $size10; }
-.ph12 { padding-left: $size12; padding-right: $size12; }
-.ph16 { padding-left: $size16; padding-right: $size16; }
-.ph20 { padding-left: $size20; padding-right: $size20; }
-.ph25 { padding-left: $size25; padding-right: $size25; }
-.ph38 { padding-left: $size38; padding-right: $size38; }
-.ph60 { padding-left: $size60; padding-right: $size60; }
-.ph96 { padding-left: $size96; padding-right: $size96; }
-
-/* Padding vertical */
-.pv0 { padding-top: 0; padding-bottom: 0; }
-.pv4 { padding-top: $size04; padding-bottom: $size04; }
-.pv6 { padding-top: $size06; padding-bottom: $size06; }
-/* not using the $size8 as this is only needed for an edge case in the console */
-.pv8 { padding-top: 8px; padding-bottom: 8px; }
-.pv10 { padding-top: $size10; padding-bottom: $size10; }
-.pv12 { padding-top: $size12; padding-bottom: $size12; }
-.pv16 { padding-top: $size16; padding-bottom: $size16; }
-.pv20 { padding-top: $size20; padding-bottom: $size20; }
-.pv25 { padding-top: $size25; padding-bottom: $size25; }
-.pv38 { padding-top: $size38; padding-bottom: $size38; }
-.pv60 { padding-top: $size60; padding-bottom: $size60; }
-.pv96 { padding-top: $size96; padding-bottom: $size96; }
-
-/* Padding left */
+.pa1 { padding: .25rem; }
+.pa2 { padding: .5rem; }
+.pa3 { padding: 1rem; }
+.pa4 { padding: 2rem; }
+.pa5 { padding: 4rem; }
+.pa6 { padding: 8rem; }
+.pa7 { padding: 16rem; }
 .pl0 { padding-left: 0; }
-.pl4 { padding-left: $size04; }
-.pl6 { padding-left: $size06; }
-.pl10 { padding-left: $size10; }
-.pl12 { padding-left: $size12; }
-.pl16 { padding-left: $size16; }
-.pl25 { padding-left: $size25; }
-.pl38 { padding-left: $size38; }
-.pl60 { padding-left: $size60; }
-.pl96 { padding-left: $size96; }
-
-/* Padding right */
+.pl1 { padding-left: .25rem; }
+.pl2 { padding-left: .5rem; }
+.pl3 { padding-left: 1rem; }
+.pl4 { padding-left: 2rem; }
+.pl5 { padding-left: 4rem; }
+.pl6 { padding-left: 8rem; }
+.pl7 { padding-left: 16rem; }
 .pr0 { padding-right: 0; }
-.pr4 { padding-right: $size04; }
-.pr6 { padding-right: $size06; }
-.pr10 { padding-right: $size10; }
-.pr12 { padding-right: $size12; }
-.pr16 { padding-right: $size16; }
-.pr20 { padding-right: $size20; }
-.pr25 { padding-right: $size25; }
-.pr38 { padding-right: $size38; }
-.pr60 { padding-right: $size60; }
-.pr96 { padding-right: $size96; }
-
-/* Padding top */
-.pt0 { padding-top: 0; }
-.pt4 { padding-top: $size04; }
-.pt6 { padding-top: $size06; }
-.pt10 { padding-top: $size10; }
-.pt12 { padding-top: $size12; }
-.pt16 { padding-top: $size16; }
-.pt20 { padding-top: $size20; }
-.pt25 { padding-top: $size25; }
-.pt38 { padding-top: $size38; }
-.pt60 { padding-top: $size60; }
-.pt96 { padding-top: $size96; }
-
-/* Padding bottom */
+.pr1 { padding-right: .25rem; }
+.pr2 { padding-right: .5rem; }
+.pr3 { padding-right: 1rem; }
+.pr4 { padding-right: 2rem; }
+.pr5 { padding-right: 4rem; }
+.pr6 { padding-right: 8rem; }
+.pr7 { padding-right: 16rem; }
 .pb0 { padding-bottom: 0; }
-.pb4 { padding-bottom: $size04; }
-.pb6 { padding-bottom: $size06; }
-.pb10 { padding-bottom: $size10; }
-.pb12 { padding-bottom: $size12; }
-.pb16 { padding-bottom: $size16; }
-.pb20 { padding-bottom: $size20; }
-.pb25 { padding-bottom: $size25; }
-.pb38 { padding-bottom: $size38; }
-.pb60 { padding-bottom: $size60; }
-.pb96 { padding-bottom: $size96; }
-
-
-/*Margin all*/
+.pb1 { padding-bottom: .25rem; }
+.pb2 { padding-bottom: .5rem; }
+.pb3 { padding-bottom: 1rem; }
+.pb4 { padding-bottom: 2rem; }
+.pb5 { padding-bottom: 4rem; }
+.pb6 { padding-bottom: 8rem; }
+.pb7 { padding-bottom: 16rem; }
+.pt0 { padding-top: 0; }
+.pt1 { padding-top: .25rem; }
+.pt2 { padding-top: .5rem; }
+.pt3 { padding-top: 1rem; }
+.pt4 { padding-top: 2rem; }
+.pt5 { padding-top: 4rem; }
+.pt6 { padding-top: 8rem; }
+.pt7 { padding-top: 16rem; }
+.pv0 { padding-top: 0; padding-bottom: 0; }
+.pv1 { padding-top: .25rem; padding-bottom: .25rem; }
+.pv2 { padding-top: .5rem; padding-bottom: .5rem; }
+.pv3 { padding-top: 1rem; padding-bottom: 1rem; }
+.pv4 { padding-top: 2rem; padding-bottom: 2rem; }
+.pv5 { padding-top: 4rem; padding-bottom: 4rem; }
+.pv6 { padding-top: 8rem; padding-bottom: 8rem; }
+.pv7 { padding-top: 16rem; padding-bottom: 16rem; }
+.ph0 { padding-left: 0; padding-right: 0; }
+.ph1 { padding-left: .25rem; padding-right: .25rem; }
+.ph2 { padding-left: .5rem; padding-right: .5rem; }
+.ph3 { padding-left: 1rem; padding-right: 1rem; }
+.ph4 { padding-left: 2rem; padding-right: 2rem; }
+.ph5 { padding-left: 4rem; padding-right: 4rem; }
+.ph6 { padding-left: 8rem; padding-right: 8rem; }
+.ph7 { padding-left: 16rem; padding-right: 16rem; }
 .ma0 { margin: 0; }
-.ma4 { margin: $size04; }
-.ma6 { margin: $size06; }
-.ma10 { margin: $size10; }
-.ma12 { margin: $size12; }
-.ma16 { margin: $size16; }
-.ma20 { margin: $size20; }
-.ma25 { margin: $size25; }
-.ma38 { margin: $size38; }
-.ma60 { margin: $size60; }
-.ma96 { margin: $size96; }
-.maAuto { margin: auto; }
-
-/*Margin horizonal*/
-.mh0 { margin-left: 0; margin-right: 0; }
-.mh4 { margin-left: $size04; margin-right: $size04; }
-.mh6 { margin-left: $size06; margin-right: $size06; }
-.mh10 { margin-left: $size10; margin-right: $size10; }
-.mh12 { margin-left: $size12; margin-right: $size12; }
-.mh16 { margin-left: $size16; margin-right: $size16; }
-.mh20 { margin-left: $size20; margin-right: $size20; }
-.mh25 { margin-left: $size25; margin-right: $size25; }
-.mh38 { margin-left: $size38; margin-right: $size38; }
-.mh60 { margin-left: $size60; margin-right: $size60; }
-.mh96 { margin-left: $size96; margin-right: $size96; }
-.mhAuto { margin-left: auto; margin-right: auto; }
-
-/*Margin vertical*/
-.mv0 { margin-top: 0; margin-bottom: 0; }
-.mv4 { margin-top: $size04; margin-bottom: $size04; }
-.mv6 { margin-top: $size06; margin-bottom: $size06; }
-.mv10 { margin-top: $size10; margin-bottom: $size10; }
-.mv12 { margin-top: $size12; margin-bottom: $size12; }
-.mv16 { margin-top: $size16; margin-bottom: $size16; }
-.mv20 { margin-top: $size20; margin-bottom: $size20; }
-.mv25 { margin-top: $size25; margin-bottom: $size25; }
-.mv38 { margin-top: $size38; margin-bottom: $size38; }
-.mv60 { margin-top: $size60; margin-bottom: $size60; }
-.mv96 { margin-top: $size96; margin-bottom: $size96; }
-.mvAuto { margin-top: auto; margin-bottom: auto; }
-
-/*Margin left*/
-.mla { margin-right: auto; }
+.ma1 { margin: .25rem; }
+.ma2 { margin: .5rem; }
+.ma3 { margin: 1rem; }
+.ma4 { margin: 2rem; }
+.ma5 { margin: 4rem; }
+.ma6 { margin: 8rem; }
+.ma7 { margin: 16rem; }
 .ml0 { margin-left: 0; }
-.ml4 { margin-left: $size04; }
-.ml6 { margin-left: $size06; }
-.ml10 { margin-left: $size10; }
-.ml12 { margin-left: $size12; }
-.ml16 { margin-left: $size16; }
-.ml20 { margin-left: $size20; }
-.ml25 { margin-left: $size25; }
-.ml38 { margin-left: $size38; }
-.ml60 { margin-left: $size60; }
-.ml96 { margin-left: $size96; }
-.mlAuto { margin-left: auto; }
-
-/*Margin right*/
-.mra { margin-right: auto; }
+.ml1 { margin-left: .25rem; }
+.ml2 { margin-left: .5rem; }
+.ml3 { margin-left: 1rem; }
+.ml4 { margin-left: 2rem; }
+.ml5 { margin-left: 4rem; }
+.ml6 { margin-left: 8rem; }
+.ml7 { margin-left: 16rem; }
 .mr0 { margin-right: 0; }
-.mr4 { margin-right: $size04; }
-.mr6 { margin-right: $size06; }
-.mr10 { margin-right: $size10; }
-.mr12 { margin-right: $size12; }
-.mr16 { margin-right: $size16; }
-.mr20 { margin-right: $size20; }
-.mr25 { margin-right: $size25; }
-.mr38 { margin-right: $size38; }
-.mr60 { margin-right: $size60; }
-.mr96 { margin-right: $size96; }
-.mrAuto { margin-right: auto; }
-
-/*Margin top*/
-.mt0 { margin-top: 0; }
-.mt4 { margin-top: $size04; }
-.mt6 { margin-top: $size06; }
-.mt10 { margin-top: $size10; }
-.mt12 { margin-top: $size12; }
-.mt16 { margin-top: $size16; }
-.mt20 { margin-top: $size20; }
-.mt25 { margin-top: $size25; }
-.mt38 { margin-top: $size38; }
-.mt60 { margin-top: $size60; }
-.mt96 { margin-top: $size96; }
-.mtAuto { margin-top: auto; }
-
-/*Margin bottom*/
+.mr1 { margin-right: .25rem; }
+.mr2 { margin-right: .5rem; }
+.mr3 { margin-right: 1rem; }
+.mr4 { margin-right: 2rem; }
+.mr5 { margin-right: 4rem; }
+.mr6 { margin-right: 8rem; }
+.mr7 { margin-right: 16rem; }
 .mb0 { margin-bottom: 0; }
-.mb4 { margin-bottom: $size04; }
-.mb6 { margin-bottom: $size06; }
-.mb10 { margin-bottom: $size10; }
-.mb12 { margin-bottom: $size12; }
-.mb16 { margin-bottom: $size16; }
-.mb20 { margin-bottom: $size20; }
-.mb25 { margin-bottom: $size25; }
-.mb38 { margin-bottom: $size38; }
-.mb60 { margin-bottom: $size60; }
-.mb96 { margin-bottom: $size96; }
-.mbAuto { margin-bottom: auto; }
+.mb1 { margin-bottom: .25rem; }
+.mb2 { margin-bottom: .5rem; }
+.mb3 { margin-bottom: 1rem; }
+.mb4 { margin-bottom: 2rem; }
+.mb5 { margin-bottom: 4rem; }
+.mb6 { margin-bottom: 8rem; }
+.mb7 { margin-bottom: 16rem; }
+.mt0 { margin-top: 0; }
+.mt1 { margin-top: .25rem; }
+.mt2 { margin-top: .5rem; }
+.mt3 { margin-top: 1rem; }
+.mt4 { margin-top: 2rem; }
+.mt5 { margin-top: 4rem; }
+.mt6 { margin-top: 8rem; }
+.mt7 { margin-top: 16rem; }
+.mv0 { margin-top: 0; margin-bottom: 0; }
+.mv1 { margin-top: .25rem; margin-bottom: .25rem; }
+.mv2 { margin-top: .5rem; margin-bottom: .5rem; }
+.mv3 { margin-top: 1rem; margin-bottom: 1rem; }
+.mv4 { margin-top: 2rem; margin-bottom: 2rem; }
+.mv5 { margin-top: 4rem; margin-bottom: 4rem; }
+.mv6 { margin-top: 8rem; margin-bottom: 8rem; }
+.mv7 { margin-top: 16rem; margin-bottom: 16rem; }
+.mh0 { margin-left: 0; margin-right: 0; }
+.mh1 { margin-left: .25rem; margin-right: .25rem; }
+.mh2 { margin-left: .5rem; margin-right: .5rem; }
+.mh3 { margin-left: 1rem; margin-right: 1rem; }
+.mh4 { margin-left: 2rem; margin-right: 2rem; }
+.mh5 { margin-left: 4rem; margin-right: 4rem; }
+.mh6 { margin-left: 8rem; margin-right: 8rem; }
+.mh7 { margin-left: 16rem; margin-right: 16rem; }
+/*
+   NEGATIVE MARGINS
 
-/*Font Size*/
-.f12 { font-size: $size12; }
-.f14 { font-size: $size14; }
-.f10 { font-size: $size10; }
-.f16 { font-size: $size16; }
+   Base:
+     n = negative
 
-.f20 { font-size: 20px; }
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
 
-.f25 { font-size: $size25; }
-.f32 { font-size: $size32; }
-.f38 { font-size: $size38; }
-.f60 { font-size: $size60; }
-.f96 { font-size: $size96; }
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
 
-.fInherit {font-size: inherit; }
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
 
-
-/* Additional Fontsizes for Homepage */
-
-.hf32 { font-size: $size32 }
-.hf30 { font-size: $size30 }
-.hf20 { font-size: $size20 }
-
+*/
+.na1 { margin: -.25rem; }
+.na2 { margin: -.5rem; }
+.na3 { margin: -1rem; }
+.na4 { margin: -2rem; }
+.na5 { margin: -4rem; }
+.na6 { margin: -8rem; }
+.na7 { margin: -16rem; }
+.nl1 { margin-left: -.25rem; }
+.nl2 { margin-left: -.5rem; }
+.nl3 { margin-left: -1rem; }
+.nl4 { margin-left: -2rem; }
+.nl5 { margin-left: -4rem; }
+.nl6 { margin-left: -8rem; }
+.nl7 { margin-left: -16rem; }
+.nr1 { margin-right: -.25rem; }
+.nr2 { margin-right: -.5rem; }
+.nr3 { margin-right: -1rem; }
+.nr4 { margin-right: -2rem; }
+.nr5 { margin-right: -4rem; }
+.nr6 { margin-right: -8rem; }
+.nr7 { margin-right: -16rem; }
+.nb1 { margin-bottom: -.25rem; }
+.nb2 { margin-bottom: -.5rem; }
+.nb3 { margin-bottom: -1rem; }
+.nb4 { margin-bottom: -2rem; }
+.nb5 { margin-bottom: -4rem; }
+.nb6 { margin-bottom: -8rem; }
+.nb7 { margin-bottom: -16rem; }
+.nt1 { margin-top: -.25rem; }
+.nt2 { margin-top: -.5rem; }
+.nt3 { margin-top: -1rem; }
+.nt4 { margin-top: -2rem; }
+.nt5 { margin-top: -4rem; }
+.nt6 { margin-top: -8rem; }
+.nt7 { margin-top: -16rem; }
 /*
 
   TABLES
   Docs: http://tachyons.io/docs/elements/tables/
 
 */
-/*.collapse { border-collapse: collapse; border-spacing: 0; }*/
-/*.striped--light-silver:nth-child(odd) { background-color: #aaa; }*/
-/*.striped--moon-gray:nth-child(odd) { background-color: #ccc; }*/
-/*.striped--light-gray:nth-child(odd) { background-color: #eee; }*/
-/*.striped--near-white:nth-child(odd) { background-color: #f4f4f4; }*/
-/*.stripe-light:nth-child(odd) { background-color: rgba( 255, 255, 255, .1 ); }*/
-/*.stripe-dark:nth-child(odd) { background-color: rgba( 0, 0, 0, .1 ); }*/
+.collapse { border-collapse: collapse; border-spacing: 0; }
+.stripedLightSilver:nth-child(odd) { background-color: #aaa; }
+.stripedMoonGray:nth-child(odd) { background-color: #ccc; }
+.stripedLightGray:nth-child(odd) { background-color: #eee; }
+.stripedNearWhite:nth-child(odd) { background-color: #f4f4f4; }
+.stripeLight:nth-child(odd) { background-color: rgba( 255, 255, 255, .1 ); }
+.stripeDark:nth-child(odd) { background-color: rgba( 0, 0, 0, .1 ); }
 /*
 
    TEXT DECORATION
@@ -1170,6 +1283,7 @@
     l = left
     r = right
     c = center
+    j = justify
 
   Media Query Extensions:
     -ns = not-small
@@ -1180,6 +1294,7 @@
 .tl { text-align: left; }
 .tr { text-align: right; }
 .tc { text-align: center; }
+.tj { text-align: justify; }
 /*
 
    TEXT TRANSFORM
@@ -1200,8 +1315,6 @@
      -l  = large
 
 */
-.toe { text-overflow: ellipsis; }
-
 .ttc { text-transform: capitalize; }
 .ttl { text-transform: lowercase; }
 .ttu { text-transform: uppercase; }
@@ -1221,40 +1334,67 @@
      4 = 4th step in size scale
      5 = 5th step in size scale
      6 = 6th step in size scale
+     7 = 7th step in size scale
 
    Media Query Extensions:
      -ns = not-small
      -m  = medium
      -l  = large
 */
-
-/* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
- * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
- * Make sure there are no height and width attributes on the embedded media.
- * Adapted from: https://github.com/suitcss/components-flex-embed
+/*
+ * For Hero/Marketing Titles
  *
- * Example:
- *
- * <div class="aspect-ratio aspect-ratio--16x9">
- *  <iframe class="aspect-ratio--object"></iframe>
- * </div>
- *
+ * These generally are too large for mobile
+ * so be careful using them on smaller screens.
  * */
-/*.aspect-ratio { height: 0; position: relative; }*/
-/*.aspect-ratio--16x9 { padding-bottom: 56.25%; }*/
-/*.aspect-ratio--9x16 { padding-bottom: 177.77%; }*/
-/*.aspect-ratio--4x3 { padding-bottom: 75%; }*/
-/*.aspect-ratio--3x4 { padding-bottom: 133.33%; }*/
-/*.aspect-ratio--6x4 { padding-bottom: 66.6%; }*/
-/*.aspect-ratio--4x6 { padding-bottom: 150%; }*/
-/*.aspect-ratio--8x5 { padding-bottom: 62.5%; }*/
-/*.aspect-ratio--5x8 { padding-bottom: 160%; }*/
-/*.aspect-ratio--7x5 { padding-bottom: 71.42%; }*/
-/*.aspect-ratio--5x7 { padding-bottom: 140%; }*/
-/*.aspect-ratio--1x1 { padding-bottom: 100%; }*/
-/*.aspect-ratio--object { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }*/
-/*.overflow-container { overflow-y: scroll; }*/
+.f6, .fHeadline { font-size: 6rem; }
+.f5, .fSubheadline { font-size: 5rem; }
+/* Type Scale */
+.f1 { font-size: 3rem; }
+.f2 { font-size: 2.25rem; }
+.f3 { font-size: 1.5rem; }
+.f4 { font-size: 1.25rem; }
+.f5 { font-size: 1rem; }
+.f6 { font-size: .875rem; }
+.f7 { font-size: .75rem; }
+/* Small and hard to read for many people so use with extreme caution */
+/*
+
+   TYPOGRAPHY
+   http://tachyons.io/docs/typography/measure/
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Measure is limited to ~66 characters */
+.measure { max-width: 30em; }
+/* Measure is limited to ~80 characters */
+.measureWide { max-width: 34em; }
+/* Measure is limited to ~45 characters */
+.measureNarrow { max-width: 20em; }
+/* Book paragraph style - paragraphs are indented with no vertical spacing. */
+.indent { text-indent: 1em; margin-top: 0; margin-bottom: 0; }
+.smallCaps { font-variant: small-caps; }
+/* Combine this class with a width to truncate text (or just leave as is to truncate at width of containing element. */
+.truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/*
+
+   UTILITIES
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+/* Equivalent to .overflowY-scroll */
+.overflowContainer { overflow-y: scroll; }
 .center { margin-right: auto; margin-left: auto; }
+.mrAuto { margin-right: auto; }
+.mlAuto { margin-left: auto; }
 /*
 
    VISIBILITY
@@ -1303,6 +1443,7 @@
   Docs: http://tachyons.io/docs/themes/hovers/
 
     - Dim
+    - Glow
     - Hide Child
     - Underline text
     - Grow
@@ -1315,9 +1456,16 @@
   Dim element on hover by adding the dim class.
 
 */
-.dim { opacity: 1; -webkit-transition: opacity $duration linear; transition: opacity $duration linear; }
-.dim:hover, .dim:focus { opacity: .75; -webkit-transition: opacity $duration linear; transition: opacity $duration linear; }
-.dim:active { opacity: .9; -webkit-transition: opacity $duration linear; transition: opacity $duration linear; }
+.dim { opacity: 1; transition: opacity .15s ease-in; }
+.dim:hover, .dim:focus { opacity: .5; transition: opacity .15s ease-in; }
+.dim:active { opacity: .8; transition: opacity .15s ease-out; }
+/*
+
+  Animate opacity to 100% on hover by adding the glow class.
+
+*/
+.glow { transition: opacity .15s ease-in; }
+.glow:hover, .glow:focus { opacity: 1; transition: opacity .15s ease-in; }
 /*
 
   Hide child & reveal on hover:
@@ -1332,33 +1480,31 @@
     <div class="child"> Hidden until hover or focus </div>
   </div>
 */
-/*.hide-child .child { opacity: 0; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }*/
-/*.hide-child:hover  .child, .hide-child:focus  .child, .hide-child:active .child { opacity: 1; -webkit-transition: opacity .15s ease-in; transition: opacity .15s ease-in; }*/
-/*.underline-hover:hover, .underline-hover:focus { text-decoration: underline; }*/
+.hideChild .child { opacity: 0; transition: opacity .15s ease-in; }
+.hideChild:hover  .child, .hideChild:focus  .child, .hideChild:active .child { opacity: 1; transition: opacity .15s ease-in; }
+.underlineHover:hover, .underlineHover:focus { text-decoration: underline; }
 /* Can combine this with overflow-hidden to make background images grow on hover
  * even if you are using background-size: cover */
-/*.grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform 0.25s ease-out; transition: -webkit-transform 0.25s ease-out; transition: transform 0.25s ease-out; transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out; }*/
-/*.grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }*/
-/*.grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }*/
-/*.grow-large { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); -webkit-transition: -webkit-transform .25s ease-in-out; transition: -webkit-transform .25s ease-in-out; transition: transform .25s ease-in-out; transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }*/
-/*.grow-large:hover, .grow-large:focus { -webkit-transform: scale( 1.2 ); transform: scale( 1.2 ); }*/
-/*.grow-large:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }*/
+.grow { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-out; transition: transform .25s ease-out; transition: transform .25s ease-out, -webkit-transform .25s ease-out; }
+.grow:hover, .grow:focus { -webkit-transform: scale( 1.05 ); transform: scale( 1.05 ); }
+.grow:active { -webkit-transform: scale( .90 ); transform: scale( .90 ); }
+.growLarge { -moz-osx-font-smoothing: grayscale; -webkit-backface-visibility: hidden; backface-visibility: hidden; -webkit-transform: translateZ( 0 ); transform: translateZ( 0 ); transition: -webkit-transform .25s ease-in-out; transition: transform .25s ease-in-out; transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out; }
+.growLarge:hover, .growLarge:focus { -webkit-transform: scale( 1.2 ); transform: scale( 1.2 ); }
+.growLarge:active { -webkit-transform: scale( .95 ); transform: scale( .95 ); }
 /* Add pointer on hover */
-.noEvents { pointer-events: none; }
 .pointer:hover { cursor: pointer; }
-.cursorDefault:hover { cursor: default; }
-
-/*
+/* 
    Add shadow on hover.
 
-   Performant box-shadow animation pattern from
-   http://tobiasahlin.com/blog/how-to-animate-box-shadow/
+   Performant box-shadow animation pattern from 
+   http://tobiasahlin.com/blog/how-to-animate-box-shadow/ 
 */
-/*.shadow-hover::after { box-shadow: 0px 0px 8px 2px rgba( 0, 0, 0, .2 ); opacity: 0; -webkit-transition: opacity .25s ease-in-out; transition: opacity .25s ease-in-out; }*/
-/*.shadow-hover:hover::after, .shadow-hover:focus::after { opacity: 1; }*/
-/* Combine with classes in skins and skins-pseudo for
- * thousands of different transition possibilities. */
-/*.bg-animate, .bg-animate:hover, .bg-animate:focus { -webkit-transition: background-color .15s ease-in-out; transition: background-color .15s ease-in-out; }*/
+.shadowHover { cursor: pointer; position: relative; transition: all .5s cubic-bezier( .165, .84, .44, 1 ); }
+.shadowHover::after { content: ''; box-shadow: 0 0 16px 2px rgba( 0, 0, 0, .2 ); border-radius: inherit; opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; transition: opacity .5s cubic-bezier( .165, .84, .44, 1 ); }
+.shadowHover:hover::after, .shadowHover:focus::after { opacity: 1; }
+/* Combine with classes in skins and skins-pseudo for 
+ * many different transition possibilities. */
+.bgAnimate, .bgAnimate:hover, .bgAnimate:focus { transition: background-color .15s ease-in-out; }
 /*
 
   Z-INDEX
@@ -1405,8 +1551,6 @@
 .zInherit { z-index: inherit; }
 .zInitial { z-index: initial; }
 .zUnset { z-index: unset; }
-
-/* Media Queries */
 /* Debugging */
 /*
 
@@ -1420,3 +1564,88 @@
 .debug * { outline: 1px solid gold; }
 .debugWhite * { outline: 1px solid white; }
 .debugBlack * { outline: 1px solid black; }
+/*
+
+   DEBUG GRID
+   http://tachyons.io/docs/debug-grid/
+
+   Can be useful for debugging layout issues
+   or helping to make sure things line up perfectly.
+   Just tack one of these classes onto a parent element.
+
+*/
+.debugGrid { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAFElEQVR4AWPAC97/9x0eCsAEPgwAVLshdpENIxcAAAAASUVORK5CYII= ) repeat top left; }
+.debugGrid16 { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII= ) repeat top left; }
+.debugGrid8Solid { background: white url( data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw== ) repeat top left; }
+.debugGrid16Solid { background: white url( data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7 ) repeat top left; }
+
+
+
+.hoverBlack90:hover { color: rgba( 0, 0, 0, .9 ); }
+.hoverBlack80:hover { color: rgba( 0, 0, 0, .8 ); }
+.hoverBlack70:hover { color: rgba( 0, 0, 0, .7 ); }
+.hoverBlack60:hover { color: rgba( 0, 0, 0, .6 ); }
+.hoverBlack50:hover { color: rgba( 0, 0, 0, .5 ); }
+.hoverBlack40:hover { color: rgba( 0, 0, 0, .4 ); }
+.hoverBlack30:hover { color: rgba( 0, 0, 0, .3 ); }
+.hoverBlack20:hover { color: rgba( 0, 0, 0, .2 ); }
+.hoverBlack10:hover { color: rgba( 0, 0, 0, .1 ); }
+
+.hoverLightOrange:hover { color: $lightOrange; }
+.hoverLightOrange20:hover { color: $lightOrange20; }
+
+.hoverWhite90:hover { color: rgba( 255, 255, 255, .9 ); }
+.hoverWhite80:hover { color: rgba( 255, 255, 255, .8 ); }
+.hoverWhite70:hover { color: rgba( 255, 255, 255, .7 ); }
+.hoverWhite60:hover { color: rgba( 255, 255, 255, .6 ); }
+.hoverWhite50:hover { color: rgba( 255, 255, 255, .5 ); }
+.hoverWhite40:hover { color: rgba( 255, 255, 255, .4 ); }
+.hoverWhite30:hover { color: rgba( 255, 255, 255, .3 ); }
+.hoverWhite20:hover { color: rgba( 255, 255, 255, .2 ); }
+.hoverWhite10:hover { color: rgba( 255, 255, 255, .1 ); }
+.hoverWhite:hover { color: #fff; }
+.hoverBlack:hover { color: #000; }
+.hoverBlue:hover { color: $blue; }
+.hoverBlue20:hover { color: $blue20; }
+.hoverBlue50:hover { color: $blue50; }
+.hoverPurple:hover { color: $purple; }
+.hoverLightBlue:hover { color: $lightBlue; }
+.hoverDarkBlue:hover { color: $darkBlue; }
+.hoverDarkBlue90:hover { color: $darkBlue90; }
+.hoverDarkBlue80:hover { color: $darkBlue80; }
+.hoverDarkBlue70:hover { color: $darkBlue70; }
+.hoverDarkBlue60:hover { color: $darkBlue60; }
+.hoverDarkBlue50:hover { color: $darkBlue50; }
+.hoverDarkBlue40:hover { color: $darkBlue40; }
+.hoverDarkBlue30:hover { color: $darkBlue30; }
+.hoverDarkBlue20:hover { color: $darkBlue20; }
+.hoverDarkBlue10:hover { color: $darkBlue10; }
+
+.hoverPink:hover { color: $pink; }
+.hoverPink90:hover { color: $pink90; }
+.hoverPink80:hover { color: $pink80; }
+.hoverPink70:hover { color: $pink70; }
+.hoverPink60:hover { color: $pink60; }
+.hoverPink50:hover { color: $pink50; }
+.hoverPink40:hover { color: $pink40; }
+.hoverPink30:hover { color: $pink30; }
+.hoverPink20:hover { color: $pink20; }
+.hoverPink10:hover { color: $pink10; }
+
+.hoverDarkerBlue:hover { color: $darkerBlue; }
+.hoverDarkerBlue50:hover { color: $darkerBlue50; }
+.hoverOrange:hover { color: $orange; }
+.hoverRed:hover { color: $red; }
+
+.hoverGreen:hover { color: rgba(39,174,96,1); }
+.hoverGreen30:hover { color: rgba(39,174,96,0.3); }
+.hoverGreen50:hover { color: rgba(39,174,96,0.5); }
+
+.hoverLightgreen05:hover { color: $lightGreen05 }
+.hoverLightgreen10:hover { color: $lightGreen10 }
+.hoverLightgreen20:hover { color: $lightGreen20 }
+.hoverLightgreen30:hover { color: $lightGreen30 }
+.hoverLightgreen50:hover { color: $lightGreen50 }
+
+.hoverBrown:hover { color: $pbrown; }
+

@@ -14,7 +14,6 @@
       "es2015"
     ],
     "typeRoots": [
-      "src/types",
       "node_modules/@types"
     ]
   },
@@ -23,7 +22,8 @@
     "dist"
   ],
   "include": [
-    "components/**/*.tsx",
+    "css",
+    "components",
     "index.ts"
   ]
 }

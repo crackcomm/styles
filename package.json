@@ -1,7 +1,8 @@
 {
   "name": "styles-tachyons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tachyons styles",
+  "website": "https://github.com/crackcomm/styles-tachyons",
   "main": "dist/build.js",
   "files": [
     "dist"
@@ -11,8 +12,10 @@
     "bump": "npm version patch --no-git-tag-version && git add package.json",
     "release": "npm run build && npm run bump && npm publish",
     "prebuild": "rimraf dist",
-    "build-particles": "postcss css/particles.css -o dist/particles.css",
-    "build": "tcm css -c -o dist && tsc -d && webpack --config webpack.config.js && npm run build-particles"
+    "build": "tcm css -c -o dist && tsc -d && webpack --config webpack.config.js && npm run build-css",
+    "build-css": "npm run build-normalize && npm run build-particles",
+    "build-normalize": "postcss css/normalize.css -o dist/css/normalize.css",
+    "build-particles": "postcss css/particles.css -o dist/css/particles.css"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^3.3.0",

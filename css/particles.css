@@ -116,6 +116,7 @@
 .black30 { color: rgba( 0, 0, 0, .3 ); }
 .black20 { color: rgba( 0, 0, 0, .2 ); }
 .black10 { color: rgba( 0, 0, 0, .1 ); }
+.black05 { color: rgba( 0, 0, 0, .05 ); }
 
 .lightOrange { color: $lightOrange; }
 .lightOrange20 { color: $lightOrange20; }
@@ -129,6 +130,7 @@
 .white30 { color: rgba( 255, 255, 255, .3 ); }
 .white20 { color: rgba( 255, 255, 255, .2 ); }
 .white10 { color: rgba( 255, 255, 255, .1 ); }
+.white05 { color: rgba( 255, 255, 255, .05 ); }
 .white { color: #fff; }
 .black { color: #000; }
 .blue { color: $blue; }
@@ -190,6 +192,7 @@
 .bgBlack10 { background-color: rgba( 0, 0, 0, .1 ); }
 .bgBlack07 { background-color: rgba( 0, 0, 0, .07 ); }
 .bgBlack04 { background-color: rgba( 0, 0, 0, .04 ); }
+.bgBlack05 { background-color: rgba( 0, 0, 0, .05 ); }
 .bgBlack02 { background-color: rgba( 0, 0, 0, .02 ); }
 
 .bgWhite90 { background-color: rgba( 255, 255, 255, .9 ); }
@@ -202,6 +205,7 @@
 .bgWhite20 { background-color: rgba( 255, 255, 255, .2 ); }
 .bgWhite10 { background-color: rgba( 255, 255, 255, .1 ); }
 .bgWhite07 { background-color: rgba( 255, 255, 255, .07 ); }
+.bgWhite05 { background-color: rgba( 255, 255, 255, .05 ); }
 .bgWhite04 { background-color: rgba( 255, 255, 255, .04 ); }
 
 .bgBlack { background-color: #000; }

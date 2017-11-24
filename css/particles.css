@@ -1579,8 +1579,7 @@
 .debugGrid8Solid { background: white url( data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw== ) repeat top left; }
 .debugGrid16Solid { background: white url( data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7 ) repeat top left; }
 
-
-
+.hoverBlack:hover { color: #000; }
 .hoverBlack90:hover { color: rgba( 0, 0, 0, .9 ); }
 .hoverBlack80:hover { color: rgba( 0, 0, 0, .8 ); }
 .hoverBlack70:hover { color: rgba( 0, 0, 0, .7 ); }
@@ -1590,10 +1589,9 @@
 .hoverBlack30:hover { color: rgba( 0, 0, 0, .3 ); }
 .hoverBlack20:hover { color: rgba( 0, 0, 0, .2 ); }
 .hoverBlack10:hover { color: rgba( 0, 0, 0, .1 ); }
+.hoverBlack05:hover { color: rgba( 0, 0, 0, .05 ); }
 
-.hoverLightOrange:hover { color: $lightOrange; }
-.hoverLightOrange20:hover { color: $lightOrange20; }
-
+.hoverWhite:hover { color: #fff; }
 .hoverWhite90:hover { color: rgba( 255, 255, 255, .9 ); }
 .hoverWhite80:hover { color: rgba( 255, 255, 255, .8 ); }
 .hoverWhite70:hover { color: rgba( 255, 255, 255, .7 ); }
@@ -1603,8 +1601,8 @@
 .hoverWhite30:hover { color: rgba( 255, 255, 255, .3 ); }
 .hoverWhite20:hover { color: rgba( 255, 255, 255, .2 ); }
 .hoverWhite10:hover { color: rgba( 255, 255, 255, .1 ); }
-.hoverWhite:hover { color: #fff; }
-.hoverBlack:hover { color: #000; }
+.hoverWhite05:hover { color: rgba( 255, 255, 255, .05 ); }
+
 .hoverBlue:hover { color: $blue; }
 .hoverBlue20:hover { color: $blue20; }
 .hoverBlue50:hover { color: $blue50; }

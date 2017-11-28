@@ -1651,3 +1651,72 @@
 
 .hoverBrown:hover { color: $pbrown; }
 
+
+.hoverBgBlack:hover { background-color: #000; }
+.hoverBgBlack90:hover { background-color: rgba( 0, 0, 0, .9 ); }
+.hoverBgBlack80:hover { background-color: rgba( 0, 0, 0, .8 ); }
+.hoverBgBlack70:hover { background-color: rgba( 0, 0, 0, .7 ); }
+.hoverBgBlack60:hover { background-color: rgba( 0, 0, 0, .6 ); }
+.hoverBgBlack50:hover { background-color: rgba( 0, 0, 0, .5 ); }
+.hoverBgBlack40:hover { background-color: rgba( 0, 0, 0, .4 ); }
+.hoverBgBlack30:hover { background-color: rgba( 0, 0, 0, .3 ); }
+.hoverBgBlack20:hover { background-color: rgba( 0, 0, 0, .2 ); }
+.hoverBgBlack10:hover { background-color: rgba( 0, 0, 0, .1 ); }
+.hoverBgBlack05:hover { background-color: rgba( 0, 0, 0, .05 ); }
+
+.hoverBgWhite:hover { background-color: #fff; }
+.hoverBgWhite90:hover { background-color: rgba( 255, 255, 255, .9 ); }
+.hoverBgWhite80:hover { background-color: rgba( 255, 255, 255, .8 ); }
+.hoverBgWhite70:hover { background-color: rgba( 255, 255, 255, .7 ); }
+.hoverBgWhite60:hover { background-color: rgba( 255, 255, 255, .6 ); }
+.hoverBgWhite50:hover { background-color: rgba( 255, 255, 255, .5 ); }
+.hoverBgWhite40:hover { background-color: rgba( 255, 255, 255, .4 ); }
+.hoverBgWhite30:hover { background-color: rgba( 255, 255, 255, .3 ); }
+.hoverBgWhite20:hover { background-color: rgba( 255, 255, 255, .2 ); }
+.hoverBgWhite10:hover { background-color: rgba( 255, 255, 255, .1 ); }
+.hoverBgWhite05:hover { background-color: rgba( 255, 255, 255, .05 ); }
+
+.hoverBgBlue:hover { background-color: $blue; }
+.hoverBgBlue20:hover { background-color: $blue20; }
+.hoverBgBlue50:hover { background-color: $blue50; }
+.hoverBgPurple:hover { background-color: $purple; }
+.hoverBgLightBlue:hover { background-color: $lightBlue; }
+.hoverBgDarkBlue:hover { background-color: $darkBlue; }
+.hoverBgDarkBlue90:hover { background-color: $darkBlue90; }
+.hoverBgDarkBlue80:hover { background-color: $darkBlue80; }
+.hoverBgDarkBlue70:hover { background-color: $darkBlue70; }
+.hoverBgDarkBlue60:hover { background-color: $darkBlue60; }
+.hoverBgDarkBlue50:hover { background-color: $darkBlue50; }
+.hoverBgDarkBlue40:hover { background-color: $darkBlue40; }
+.hoverBgDarkBlue30:hover { background-color: $darkBlue30; }
+.hoverBgDarkBlue20:hover { background-color: $darkBlue20; }
+.hoverBgDarkBlue10:hover { background-color: $darkBlue10; }
+
+.hoverBgPink:hover { background-color: $pink; }
+.hoverBgPink90:hover { background-color: $pink90; }
+.hoverBgPink80:hover { background-color: $pink80; }
+.hoverBgPink70:hover { background-color: $pink70; }
+.hoverBgPink60:hover { background-color: $pink60; }
+.hoverBgPink50:hover { background-color: $pink50; }
+.hoverBgPink40:hover { background-color: $pink40; }
+.hoverBgPink30:hover { background-color: $pink30; }
+.hoverBgPink20:hover { background-color: $pink20; }
+.hoverBgPink10:hover { background-color: $pink10; }
+
+.hoverBgDarkerBlue:hover { background-color: $darkerBlue; }
+.hoverBgDarkerBlue50:hover { background-color: $darkerBlue50; }
+.hoverBgOrange:hover { background-color: $orange; }
+.hoverBgRed:hover { background-color: $red; }
+
+.hoverBgGreen:hover { background-color: rgba(39,174,96,1); }
+.hoverBgGreen30:hover { background-color: rgba(39,174,96,0.3); }
+.hoverBgGreen50:hover { background-color: rgba(39,174,96,0.5); }
+
+.hoverBgLightgreen05:hover { background-color: $lightGreen05 }
+.hoverBgLightgreen10:hover { background-color: $lightGreen10 }
+.hoverBgLightgreen20:hover { background-color: $lightGreen20 }
+.hoverBgLightgreen30:hover { background-color: $lightGreen30 }
+.hoverBgLightgreen50:hover { background-color: $lightGreen50 }
+
+.hoverBgBrown:hover { background-color: $pbrown; }
+

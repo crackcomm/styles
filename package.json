@@ -1,6 +1,6 @@
 {
   "name": "styles-tachyons",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Tachyons styles",
   "website": "https://github.com/crackcomm/styles-tachyons",
   "main": "dist/build.js",
